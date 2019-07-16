@@ -1,0 +1,85 @@
+<idea-plugin>
+    <id>com.github.typ0520.jsontodart</id>
+    <name>JSON To Dart Class (JsonToDartClass)</name>
+    <vendor email="php12345@163.com" url="https://www.github.com/typ0520">typ0520</vendor>
+
+    <description><![CDATA[
+      <br>Plugin for Dart to convert Json String into Dart data class code quickly</br>
+
+      <br> Fast use it with short cut key ALT + K on Windows or Option + K on Mac</br>
+
+      <b><br>Features:</br></b>
+
+        <br>Generating Dart data class from any legal JSON string or any URLs that returns a JSON string as response
+        <br>Generating Dart data class from any legal JSON text when right click on directory and select New -> Dart data class File from JSON</br>
+        <br>Formatting any legal JSON string</br>
+        <br>Support Loading JSON From Paster/Local File/Http URL</br>
+        <br></br>
+        <p></P>
+
+        <br></br>
+
+        <p><img src="https://plugins.jetbrains.com/files/12737/screenshot_20029.png" alt="demo" width="800" height="532"></p>
+        <p><img src="https://plugins.jetbrains.com/files/12737/screenshot_20030.png" alt="demo" width="800" height="532"></p>
+        <p><img src="https://plugins.jetbrains.com/files/12737/screenshot_20031.png" alt="demo" width="800" height="532"></p>
+
+      <em>Flutter</em>
+      <em>Dart</em>
+      <em>Json</em>
+      <em>dart:convert</em>
+      <em>json_serializable</em>
+
+      <br></br>
+     <p><a href="https://github.com/typ0520/JsonToDartClass">Full Usage Documentation</a></br><p>
+
+
+        <br></br>
+        <p>Thanks:<a href="https://github.com/wuseal/JsonToKotlinClass">JsonToKotlinClass</a></br</p>
+
+    ]]></description>
+
+
+    <!--<change-notes><![CDATA[-->
+    <!--<br>Bugs fix  </br>-->
+    <!--<br>New Features </br>-->
+    <!--<br>Note: This version no update jsonschema</br>-->
+
+    <!--]]>-->
+    <!--</change-notes>-->
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="com.github.typ0520.jsontodart.makedartdata" class="wu.seal.jsontodart.MakeKotlinClassAction"
+                text="Dart classes from JSON"
+                description="convert a json string data into Dart class code">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt k"/>
+        </action>
+
+        <action id="com.github.typ0520.jsontodart.GenerateKotlinFileAction"
+                class="wu.seal.jsontodart.GenerateKotlinFileAction"
+                text="Dart class File from JSON"
+                icon="/icons/action.png"
+                description="Generate Dart class File from JSON">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFile"/>
+        </action>
+
+    </actions>
+
+    <application-components>
+        <component>
+            <implementation-class>wu.seal.jsontodart.JsonToKotlinApplication</implementation-class>
+        </component>
+    </application-components>
+    <version/>
+</idea-plugin>
