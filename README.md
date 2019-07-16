@@ -258,4 +258,4 @@ Open the `build.gradle` in IntelliJ, open "Gradle" tool window, expand the proje
 * Share to others to help more people have a better develope expierience :heart:
 
 ### Thanks
-* [@JsonToDartClass](https://github.com/typ0520/JsonToDartClass) Most of the code comes from this library
+* [@JsonToKotlinClass](https://github.com/wuseal/JsonToKotlinClass) Most of the code comes from this library
