@@ -20,7 +20,7 @@ This is a very cool tool for Flutter developers, it can convert a JSON string to
 ### Usage
 * Search 'JsonToDartClass' in Intellij Idea Plugin Repository Or AndroidStudio Plugin Repository And Install it.
 
-> File --> Settings --> Plugins --> Browse Repositories --> Search JsonToDartClass
+> File --> Settings --> Plugins --> Marketplace --> Search JsonToDartClass
 
 * Restart your IDE
 
