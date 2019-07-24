@@ -12,7 +12,7 @@ Hi, Welcome! This is a plugin to generate Dart `model class` from JSON string, i
 
 ### Overview
 
-This is a very cool tool for Flutter developers, it can convert a JSON string to Dart `model class`. The tool could not only recognize the primitive types but also auto create complex types. It's easily accessible, we provide shortcut keymap `ALT + K` for Windows and `Option + K` for Mac, have a try and you'll fall in love with it! JsonToDartClass just makes programming more enjoyable, enjoy coding!
+This is a very cool tool for Flutter developers, it can convert a JSON string to Dart `model class`. The tool could not only recognize the primitive types but also auto create complex types. It's easily accessible, we provide shortcut keymap `ALT + L` for Windows and `Option + L` for Mac, have a try and you'll fall in love with it! JsonToDartClass just makes programming more enjoyable, enjoy coding!
 
 ### Easy Use
 ![alt text](https://plugins.jetbrains.com/files/12737/screenshot_20027.png)
@@ -24,7 +24,7 @@ This is a very cool tool for Flutter developers, it can convert a JSON string to
 
 * Restart your IDE
 
-* Press `ALT + K` for Windows or `Option + K` for Mac or right click on package -> `New`->`Dart class file from JSON` and continue as guided.
+* Press `ALT + L` for Windows or `Option + L` for Mac or right click on package -> `New`->`Dart class file from JSON` and continue as guided.
 
 ### Advanced usage
 Have a try with the advanced dialog :stuck_out_tongue_winking_eye:

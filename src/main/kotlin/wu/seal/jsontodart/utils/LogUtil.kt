@@ -16,7 +16,6 @@ object LogUtil {
         } else {
             LoggerRt.getInstance(PLUGIN_NAME).info(info)
         }
-        File("/Users/tong/Desktop/idea.txt").appendText(info + "\n")
     }
 
     fun w(warning: String) {
